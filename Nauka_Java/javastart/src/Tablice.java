@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Tablice {
@@ -37,7 +38,7 @@ public class Tablice {
         //Utwórz tablice typu int przechowującą n elementów, gdzie n - parametr pobierany od użytkownika.
         // Następnie wypełnij ją liczbami od 1 do n i wyświetl zawartość na ekranie przy pomocy pętli while.
 
-        Scanner scanner = new Scanner(System.in);
+/*        Scanner scanner = new Scanner(System.in);
         int n;
         System.out.println("Podaj wielkość tablicy ");
         n = scanner.nextInt();
@@ -51,6 +52,34 @@ public class Tablice {
         while (licznik<tablica.length) {
             System.out.println(tablica[licznik]+"");
             licznik++;
+        }*/
+
+        //Napisz metodę pobierającą dwueementową tablicę liczb i zwracający ich sumę
+
+/*        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj tablice 2 - elementową ");
+        int tablica[] = new int[2];
+
+        for (int i = 0; i < tablica.length; i++) {
+            System.out.println("Podaj liczbe dla tablicy");
+            tablica[i] = scanner.nextInt();*/
+
+        //Napisz program pobierający trójelementową tablicę liczb i zwracający największą liczbę
+
+        Scanner scanner = new Scanner(System.in);
+        int tablica[] = new int[3];
+        int maxValue = tablica[0];
+
+        for (int i = 0; i < tablica.length; i++) {
+            System.out.println("Podaj liczbe dla tablicy");
+            tablica[i] = scanner.nextInt();
         }
+
+        for (int licznik = 1; licznik < tablica.length; licznik++) {
+            if (tablica[licznik] > maxValue) {
+                maxValue = tablica[licznik];
+            }
+        }
+        System.out.println("Największa wartość w tablicy to: " + maxValue);
     }
 }
