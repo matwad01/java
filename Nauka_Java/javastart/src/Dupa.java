@@ -2,7 +2,7 @@
 //Nastepnie utworz klase firma, w której wykorzystasz klase pracownik do utworzenia dwóch obiektów
 //przechowujących dane pracowników i później wyświetlasz je na ekran
 
-/*public class Firma {
+/*public class Frm {
     public static void main(String[] args) {
         Pracownik hydraulik = new Pracownik();
 
@@ -29,7 +29,7 @@ class Pracownik {
 
 //Inna wersja powiększona o 3 pracowników z tablicami
 
-public class Firma {
+public class Dupa {
     public static void main(String[] args) {
         Pracownik[] pracownicy = new Pracownik[3];
         String imiona[] = {"Janusz", "Andrzej", "Brajan"};
